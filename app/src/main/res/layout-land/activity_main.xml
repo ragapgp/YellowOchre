@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/AppTheme"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:context=".MainActivity"
+        android:background="@drawable/bg3">
+        <!--Main XML file which shows a image, background and login fields with Login/Register links -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+
+            android:paddingVertical="0dp"
+            android:paddingHorizontal="0dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/logo6"
+           />
+
+        <EditText
+            android:id="@+id/editText_username"
+            android:layout_width="236dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffff"
+            android:drawableLeft="@drawable/login"
+            android:hint="@string/username"
+            android:paddingLeft="2dp"
+            android:textColor="#8888" />
+
+        <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="236dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffff"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/password"
+            android:hint="@string/password" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#E4A425"
+            android:text="@string/login"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="#ffff"
+                android:text="@string/not_registered"/>
+
+            <TextView
+                android:id="@+id/textView_register"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:paddingLeft="10dp"
+                android:textColor="#075D68"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="@string/register"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
