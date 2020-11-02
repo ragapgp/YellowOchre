@@ -11,4 +11,12 @@
     <string name="email">Email</string>
     <string name="already_registered">Already Registered</string>
     <string name="regpassword">Password</string>
+    <string name="enter_quiz">Enter Quiz</string>
+    <string name="instructions">Quiz Instructions</string>
+    <string name="question_header">Question: 1/x</string>
+    <string name="showscore"></string>
+    <string name="quizhistory">Quiz history</string>
+    <string name="playhistory">Last played</string>
+    <string name="confirm">Confirm</string>
+    <string name="gotoquiz">Go to Quiz</string>
 </resources>

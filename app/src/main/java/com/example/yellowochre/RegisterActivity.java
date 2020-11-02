@@ -56,7 +56,7 @@ public class RegisterActivity extends AppCompatActivity {
             //date check
             String dateCheck = charSequence.toString();
             boolean check = true;
-            if (dateCheck.length()==2 && i1 ==0) {
+       /*     if (dateCheck.length()==2 && i1 ==0) {
                 if (Integer.parseInt(dateCheck) < 1 || Integer.parseInt(dateCheck)>12) {
                     check = false;
                 } else {
@@ -95,7 +95,7 @@ public class RegisterActivity extends AppCompatActivity {
                 eDateOfBirth.setError("Enter a valid date: MM/DD/YYYY");
             } else {
                 eDateOfBirth.setError(null);
-            }
+            }*/
 
             bRegister.setEnabled(true);
         }
@@ -138,6 +138,7 @@ public class RegisterActivity extends AppCompatActivity {
                 Intent registerIntent = new Intent(RegisterActivity.this, MainActivity.class);
                 dateCheck();
                 if (eFirstName.getText().toString().length() > 3 &&
+                        eFirstName.getText().toString().length() < 30 &&
                         eFamilyName.getText().toString().length() > 0  &&
                         eDateOfBirth.getText().toString().length() > 0 &&
                         eEmail.getText().toString().length() > 0 &&
@@ -197,6 +198,9 @@ public class RegisterActivity extends AppCompatActivity {
         } else if (fname.length() < 3) {
             eFirstName.setError("First Name cannot be less than 3 characters");
             System.out.println("FName less than 3 chars");
+        } else if (fname.length() > 30) {
+            eFirstName.setError("First Name cannot be more than 30 characters");
+            System.out.println("FName more than 30 chars");
         }
         else {
             eFirstName.setError(null);

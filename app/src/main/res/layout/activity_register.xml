@@ -21,8 +21,7 @@
         android:paddingHorizontal="0dp"
         android:scaleType="centerCrop"
         android:layout_marginTop="50dp"
-        app:srcCompat="@drawable/logo6"
-        />
+        app:srcCompat="@drawable/logo6" />
 
     <EditText
         android:id="@+id/editText_firstname"
@@ -32,7 +31,6 @@
         android:background="#ffff"
         android:drawableLeft="@drawable/name"
         android:hint="@string/firstname"
-        android:maxLength="30"
         android:paddingLeft="2dp"
         android:textColor="#8888" />
 
